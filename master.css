@@ -1,0 +1,25 @@
+body {
+ margin: 0;
+ padding: 0;
+ background-color:red;
+}
+
+.container {
+ width: 1000px;
+ margin: auto;
+ padding-top: 50px;
+ background-color: red;
+}
+
+h1 {
+ text-align: center;
+ font-size: 36px;
+ color:red;
+ margin-bottom: 30px;
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 50px;}
