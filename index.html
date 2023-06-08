@@ -1,80 +1,47 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html>
-<head>
- <title>ibrahim hani </title>
- <style type=".master.css">
-  body {
-   background-color:red;
-   font-family: Arial, sans-serif;
-  }
-  .container {
-   margin: 50px auto;
-   width: 1000px;
-   height: 700px;
-   background-color:blue;
-   padding: 20px;
-   box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-  }
-  h1 {
-   text-align: center;
-   color: #333;
-  }
-  form {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 50px;
-  }
-  input[type="text"] {
-   padding: 10px;
-   border-radius: 5px;
-   border: none;
-   box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
-   width: 80%;
-            margin-bottom :20px
-        }
-        button[type="submit"]{
-            padding :10 px ;
-            background-color :#4CAF50 ;
-            color :white ;
-            border:none ;
-            border-radius :5 px ;
-            cursor:pointer ;
-        }
-        .result{
-            margin-top :30 px ;
-            padding :20 px ;
-            width :80% ;
-            height :300 px ;
-            overflow-y:auto ; 
-        }
-        .result p{
-           font-size :16 px ; 
-           line-height :1.5 ; 
-           color:#333 ; 
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <h1>ابراهيم هاني العو </h1>
-    <form onsubmit="runLink(event)">
-        <input type="text" id="linkInput" placeholder="Enter a link...">
-        <button type="submit">Run Link</button>
-    </form>
-    <div class="result">
-        <p id="resultText"></p>
+  <head>
+    <title>ibrahim hani</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="head">
+      <a href="https://www.facebook.com/ibrahim.hani.1.12"
+        ><h2>ابراهيم هاني العو</h2></a
+      >
+      <h1>السلام عليكم ورحمة الله وبركاته</h1>
     </div>
-</div>
+    <div class="container">
+      <h1>
+        لتشغيل فيديو من علي اليوتيوب بدون اعلانات عليك ان تقوم بنسخ لينك تضمين
+        من فيديو اليوتيوب ووضعه في المربع التالي والضغط علي تشغيل
+      </h1>
+      <p>
+        اللهم إني أسألك فهم النبيّين وحفظ المرسلين والملائكة المقربين، اللهم
+        اجعل ألسنتنا عامرة بذكرك، وقلوبنا بخشيتك، وأسرارنا بطاعتك؛ إنك على كل
+        شيء قدير، حسبنا ونعم الوكيل"
+      </p>
+      <form onsubmit="runLink(event)">
+        <input type="text" id="linkInput" placeholder="Enter a link..." />
+        <button type="submit">تشغيل الفيديو</button>
+      </form>
+      <div class="result">
+        <p id="resultText"></p>
+      </div>
 
-<script type="text/javascript">
-    function runLink(event) {
+      <h2 class="mm">حقوق الملكية الفكرية :-محمد هاني العو</h2>
+    </div>
+
+    <script type="text/javascript">
+      function runLink(event) {
         event.preventDefault();
         var link = document.getElementById("linkInput").value;
-        document.getElementById("resultText").innerHTML = "Running link: " + link;
+        document.getElementById("resultText").innerHTML =
+          "Running link: " + link;
         // Add code to run the link here
-    }
-</script>
-
-</body>
+      }
+    </script>
+  </body>
 </html>
